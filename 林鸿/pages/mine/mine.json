@@ -1,5 +1,8 @@
 {
-  "usingComponents": {},
+  "component": true,
+  "usingComponents": {
+    "mine_component": "/pages/mine_component/mine_component"
+  },
     "navigationBarBackgroundColor": "#81c2e0",
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "我的"

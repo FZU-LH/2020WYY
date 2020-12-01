@@ -1,0 +1,60 @@
+<view class="container">
+  <view class='topTabSwiper'>
+    <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}'  data-current = "0" bindtap='checkCurrent'>我喜欢的</view>
+    <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}'  data-current = "1" bindtap='checkCurrent'>我的收藏</view>
+    <view class='tab  {{currentData == 2 ? "tabBorer" : ""}}'  data-current = "2" bindtap='checkCurrent'>浏览记录</view>
+    <!-- <button class='tab  {{currentData == 3 ? "tabBorer" : ""}}'   data-current = "3" bindtap='checkCurrent'>意见反馈</button> -->
+    <view class='tab  {{currentData == 3 ? "tabBorer" : ""}}'  data-current = "3" bindtap='checkCurrent'>意见反馈</view>
+  </view>
+  <swiper current="{{currentData}}" style="height:600px;width:100%;position:relative;top:-110rpx;border-radius: 0;" duration="300" bindchange="bindchange">
+  <swiper-item>
+    <view class='itemlist'>
+    <block wx:for="{{menuitems1}}" wx:key="item">
+      <view class='pro_item' >
+          <image class='pro_logo' src='{{item.image}}'></image>
+        <view class='pro_body'>
+            <view class='pro_titile'>{{item.text1}}</view>
+            <text class='pro_desc'>{{item.text2}}</text>
+        </view>
+      </view>
+      <view class="div-line"></view>
+    </block>
+    </view>
+  </swiper-item> 
+  <swiper-item>
+    <view class='itemlist'>
+    <block wx:for="{{menuitems2}}" wx:key="item">
+    
+      <view class='pro_item' >
+          <image class='pro_logo' src='{{item.image}}'></image>
+        <view class='pro_body'>
+            <view class='pro_titile'>{{item.text1}}</view>
+            <text class='pro_desc'>{{item.text2}}</text>
+        </view>
+      </view>
+      <view class="div-line"></view>
+    </block>
+    </view>
+  </swiper-item> 
+  <swiper-item>
+    <view class='itemlist'>
+    <block wx:for="{{menuitems3}}" wx:key="item">
+      <view class='pro_item' >
+          <image class='pro_logo' src='{{item.image}}'></image>
+        <view class='pro_body'>
+            <view class='pro_titile'>{{item.text1}}</view>
+            <text class='pro_desc'>{{item.text2}}</text>
+        </view>
+      </view>
+      <view class="div-line"></view>
+    </block>
+    </view>
+  </swiper-item> 
+  <swiper-item>
+    <button  open-type="feedback">click here</button>
+      <!-- <text class="button_title">意见反馈</text> -->
+  </swiper-item>
+  
+</swiper>
+
+</view>

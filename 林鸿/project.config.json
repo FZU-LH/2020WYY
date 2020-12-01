@@ -29,6 +29,7 @@
       "outputPath": ""
     },
     "enableEngineNative": false,
+    "bundle": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
@@ -39,7 +40,7 @@
   "compileType": "miniprogram",
   "libVersion": "2.14.0",
   "appid": "wxd6c6c0f7cae0d839",
-  "projectname": "%E7%BD%91%E6%98%93%E4%BA%91",
+  "projectname": "%E7%BD%91%E7%9B%8A%E4%BA%91",
   "debugOptions": {
     "hidedInDevtools": []
   },
@@ -64,7 +65,26 @@
       "list": []
     },
     "miniprogram": {
-      "list": []
+      "list": [
+        {
+          "name": "sy",
+          "pathName": "pages/shudon/sy/sy",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "edit",
+          "pathName": "pages/shudon/edit/edit",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "look",
+          "pathName": "pages/shudon/look/look",
+          "query": "",
+          "scene": null
+        }
+      ]
     }
   }
 }

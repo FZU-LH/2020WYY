@@ -12,8 +12,8 @@ Page({
   },
   //事件处理函数
   bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
+    wx.switchTab({
+      url: '../wyy2/wyy2'
     })
   },
   onLoad: function () {
@@ -41,11 +41,14 @@ Page({
      wx.getUserInfo({
         success: res => {
           app.globalData.userInfo = res.userInfo
+          wx.reLaunch({
+            url: '/pages/index/index',
+          })
           /*this.setData({
             userInfo: res.userInfo,
             hasUserInfo: true
           })*/
-        },
+        }
       })
     }
   },
@@ -56,7 +59,7 @@ Page({
   },
   jumppage1:function(){
     wx.navigateTo({
-      url: '/pages/wyy1/wyy1',
+      url: '/pages/wyy2/wyy2',
     })
   },
   getUserInfo: function(e) {
@@ -65,9 +68,6 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
-    })
-    wx.reLaunch({
-      url: '/pages/index/index',
     })
   }
 })

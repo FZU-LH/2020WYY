@@ -9,13 +9,7 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    menuitems: [
-      { text: '我喜欢的', url:"/pages/i_like/i_like" },
-      { text: '我的收藏', url: '/pages/my_favorite/my_favorite' },
-      { text: '浏览记录' ,url:'/pages/record/record'},
-      { text: '切换账户',url:'/pages/index/index'}  
-      // 这里的url为登陆界面
-    ]
+    
   },
 
   /**
